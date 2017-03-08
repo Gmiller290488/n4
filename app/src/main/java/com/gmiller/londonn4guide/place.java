@@ -4,7 +4,7 @@ package com.gmiller.londonn4guide;
  * Created by dell on 08/03/2017.
  */
 
-public class places {
+public class place {
     private String mName;
 
     private String mKnownFor;
@@ -14,7 +14,7 @@ public class places {
     private String mUrl;
 
     /**
-     * Constructs a new {@link places} object.
+     * Constructs a new {@link place} object.
      *
      * @param name is the name of the place
      * @param knownFor is the speciality of the place
@@ -22,18 +22,18 @@ public class places {
      * @param url is the website address of the place
      */
 
-    public places(String name, String knownFor, double distance, String url) {
+    public place(String name, String knownFor, double distance, String url) {
         mName = name;
         mKnownFor = knownFor;
         mDistance = distance;
         mUrl = url;
     }
 
-    public String getName;
+    public String getName() { return mName; }
 
-    public String getKnownFor;
+    public String getKnownFor() {return mKnownFor; }
 
-    public double getDistance;
+    public double getDistance() {return mDistance; }
 
-    public String getUrl;
+    public String getUrl() {return mUrl; }
 }

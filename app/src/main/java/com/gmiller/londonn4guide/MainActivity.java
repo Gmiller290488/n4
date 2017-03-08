@@ -1,6 +1,5 @@
 package com.gmiller.londonn4guide;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -16,17 +15,14 @@ public class MainActivity extends AppCompatActivity {
 
         // Find the View that shows the numbers category
         TextView restaurants = (TextView) findViewById(R.id.restaurants);
-
         // Set a click listener on that View
         restaurants.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent RestaurantsIntent = new Intent(MainActivity.this, RestaurantsActivity.class);
-
-                // Start the new activity
-                startActivity(RestaurantsIntent);
+            // The code in this method will be executed when the restaurants category is clicked on.
+            public void onClick(View arg0) {
+                // Start NewActivity.class
+                Intent myIntent = new Intent(MainActivity.this,
+                        RestaurantsActivity.class);
+                startActivity(myIntent);
             }
         });
 
@@ -34,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         TextView pubs = (TextView) findViewById(R.id.pubs);
 
         // Set a click listener on that View
-        restaurants.setOnClickListener(new View.OnClickListener() {
+        pubs.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
@@ -50,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         TextView shops = (TextView) findViewById(R.id.shops);
 
         // Set a click listener on that View
-        restaurants.setOnClickListener(new View.OnClickListener() {
+        shops.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
@@ -66,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         TextView parks = (TextView) findViewById(R.id.parks);
 
         // Set a click listener on that View
-        restaurants.setOnClickListener(new View.OnClickListener() {
+        parks.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {

@@ -16,7 +16,8 @@
         android:textAllCaps="true"
         android:id="@+id/restaurants"
         android:textSize="40sp"
-        android:background="#c0c0c0"
+        android:background="@color/category_restaurants"
+        android:textColor="@android:color/white"
         />
 
     <TextView
@@ -26,25 +27,30 @@
         android:textAllCaps="true"
         android:id="@+id/pubs"
         android:textSize="40sp"
-        android:background="#ff0000"/>
+        android:background="@color/category_pubs"
+        android:textColor="@android:color/white"/>
 
     <TextView
+        android:textColor="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="88dp"
         android:text="Shops"
         android:textAllCaps="true"
         android:id="@+id/shops"
         android:textSize="40sp"
-        android:background="#fff000"/>
+        android:background="@color/category_shops"></TextView>
 
     <TextView
+        android:textColor="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="88dp"
         android:text="Parks"
         android:textAllCaps="true"
         android:id="@+id/parks"
         android:textSize="40sp"
-        android:background="#000fff"/>
+        android:background="@color/category_parks">
+
+    </TextView>
 
 
 
