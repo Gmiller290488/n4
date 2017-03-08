@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gmiller.londonn4guide.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:text="Restaurants"
+        android:textAllCaps="true"
+        android:id="@+id/restaurants"
+        android:textSize="40sp"
+        android:background="#c0c0c0"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:text="Pubs"
+        android:textAllCaps="true"
+        android:id="@+id/pubs"
+        android:textSize="40sp"
+        android:background="#ff0000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:text="Shops"
+        android:textAllCaps="true"
+        android:id="@+id/shops"
+        android:textSize="40sp"
+        android:background="#fff000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:text="Parks"
+        android:textAllCaps="true"
+        android:id="@+id/parks"
+        android:textSize="40sp"
+        android:background="#000fff"/>
+
+
+
+</LinearLayout>
