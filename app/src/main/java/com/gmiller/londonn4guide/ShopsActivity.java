@@ -25,8 +25,8 @@ public class ShopsActivity extends AppCompatActivity {
 
         // Create a fake list of earthquake locations.
         final ArrayList<place> places = new ArrayList<place>();
-        places.add(new place("Shiny Pretty Shop", "Niche gifts", 0.550, "https://prettyshinyshop.com/"));
-        places.add(new place("Stroud Green Fruit & Veg", "Organic food products", 0.570, "http://www.myorganichunter.com/destination_detail/organic-grocer/stroud_green_fruit_and_veg"));
+        places.add(new place("Shiny Pretty Shop", "Niche gifts", 0.6, "https://prettyshinyshop.com/"));
+        places.add(new place("Stroud Green Fruit & Veg", "Organic food products", 0.6, "http://www.myorganichunter.com/destination_detail/organic-grocer/stroud_green_fruit_and_veg"));
 
 
         // Create a new {@link ArrayAdapter} of earthquakes

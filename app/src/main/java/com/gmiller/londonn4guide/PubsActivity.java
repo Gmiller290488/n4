@@ -25,12 +25,12 @@ public class PubsActivity extends AppCompatActivity {
 
         // Create a fake list of earthquake locations.
         final ArrayList<place> places = new ArrayList<place>();
-        places.add(new place("The Swimmer At The Grafton Arms", "Ales and European lagers", 2.1,"https://www.facebook.com/theswimmeratthegraftonarms/"));
+        places.add(new place("The Swimmer", "Ales and European lagers", 2.1,"https://www.facebook.com/theswimmeratthegraftonarms/"));
         places.add(new place("The Shaftesbury", "Ales and European Lagers", 1.7,"https://www.facebook.com/ShaftesburyT/"));
         places.add(new place("White Lion", "Pub Grub & Craft Beers", 0.7 , "http://www.whitelionn4.com/"));
         places.add(new place("The Old Dairy", "Craft Beer & Sports on TV",1.1 , "http://www.theolddairyn4.co.uk/"));
         places.add(new place("The Aldwyn Castle", "Britsh GastroPub Food", 2.3, "https://www.thealwynecastleislington.co.uk/"));
-        places.add(new place("WB Yeats", "Great Food & Brew Dog Beers", 0.65, "https://www.facebook.com/wbyeatsn4/"));
+        places.add(new place("WB Yeats", "Great Food & Brew Dog Beers", 0.7, "https://www.facebook.com/wbyeatsn4/"));
         places.add(new place("The Faltering Fullback", "Lots Of Sports",0.5 , "http://falteringfullback.com/"));
         places.add(new place("The Railway Tavern", "Daily Drink & Food Deals", 2.2, "http://www.the-railwaytavern.co.uk/"));
 

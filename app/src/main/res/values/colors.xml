@@ -24,4 +24,24 @@
 
     <!-- Background color for the phrases category -->
     <color name="category_shops">#16AFCA</color>
+
+    <color name="distance0.5">#4A7BA7</color>
+
+    <color name="distance1">#04B4B3</color>
+
+    <color name="distance1.5">#10CAC9</color>
+
+    <color name="distance1.75">#F5A623</color>
+
+    <color name="distance2">#FF7D50</color>
+
+    <color name="distance2.5">#FC6644</color>
+
+    <color name="distance3">#E75F40</color>
+
+    <color name="distance3.5">#E13A20</color>
+
+    <color name="distance4">#D93218</color>
+
+    <color name="distance4plus">#C03823</color>
 </resources>
