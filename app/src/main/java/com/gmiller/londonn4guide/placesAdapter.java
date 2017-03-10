@@ -69,33 +69,37 @@ public class placesAdapter extends ArrayAdapter<place> {
 
     private double getDistColor(double dist) {
         int distanceColorResourceId;
-        int floordist = (int) Math.floor(dist);
+        int floordist = (int) (dist)*10;
         switch (floordist) {
-            case 1:
+            case 0:
                 distanceColorResourceId = R.color.distance0_5;
                 break;
-            case 2:
-                distanceColorResourceId = R.color.distance1_75;
+
+            case 5:
+                distanceColorResourceId = R.color.distance0_5;
                 break;
-            case 3:
+            case 10:
                 distanceColorResourceId = R.color.distance1;
                 break;
-            case 4:
+            case 15:
                 distanceColorResourceId = R.color.distance1_5;
                 break;
-            case 5:
+            case 20:
+                distanceColorResourceId = R.color.distance1_75;
+                break;
+            case 25:
                 distanceColorResourceId = R.color.distance2;
                 break;
-            case 6:
+            case 30:
                 distanceColorResourceId = R.color.distance2_5;
                 break;
-            case 7:
+            case 35:
                 distanceColorResourceId = R.color.distance3;
                 break;
-            case 8:
+            case 40:
                 distanceColorResourceId = R.color.distance3_5;
                 break;
-            case 9:
+            case 45:
                 distanceColorResourceId = R.color.distance4;
                 break;
             default:

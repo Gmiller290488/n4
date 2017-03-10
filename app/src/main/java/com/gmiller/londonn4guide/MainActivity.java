@@ -1,77 +1,29 @@
 package com.gmiller.londonn4guide;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the numbers category
-        TextView restaurants = (TextView) findViewById(R.id.restaurants);
-        // Set a click listener on that View
-        restaurants.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the restaurants category is clicked on.
-            public void onClick(View arg0) {
-                // Start NewActivity.class
-                Intent myIntent = new Intent(MainActivity.this,
-                        RestaurantsActivity.class);
-                startActivity(myIntent);
-            }
-        });
+        // Find the view pager that will allow the user to swipe between fragments
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
-        // Find the View that shows the numbers category
-        TextView pubs = (TextView) findViewById(R.id.pubs);
+        // Create an adapter that knows which fragment should be shown on each page
+        CategoryAdapter adapter = new CategoryAdapter(getSupportFragmentManager());
+        // Set the adapter onto the view pager
+        viewPager.setAdapter(adapter);
 
-        // Set a click listener on that View
-        pubs.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent PubsIntent = new Intent(MainActivity.this, PubsActivity.class);
-
-                // Start the new activity
-                startActivity(PubsIntent);
-            }
-        });
-
-        // Find the View that shows the numbers category
-        TextView shops = (TextView) findViewById(R.id.shops);
-
-        // Set a click listener on that View
-        shops.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent ShopsIntent = new Intent(MainActivity.this, ShopsActivity.class);
-
-                // Start the new activity
-                startActivity(ShopsIntent);
-            }
-        });
-
-        // Find the View that shows the numbers category
-        TextView parks = (TextView) findViewById(R.id.parks);
-
-        // Set a click listener on that View
-        parks.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent ParksIntent = new Intent(MainActivity.this, ParksActivity.class);
-
-                // Start the new activity
-                startActivity(ParksIntent);
-            }
-        });
+        // Give the TabLayout the ViewPager
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
     }
 }

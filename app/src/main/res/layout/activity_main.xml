@@ -1,57 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
     tools:context="com.gmiller.londonn4guide.MainActivity">
 
-    <TextView
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
         android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:text="Restaurants"
-        android:textAllCaps="true"
-        android:id="@+id/restaurants"
-        android:textSize="40sp"
-        android:background="@color/category_restaurants"
-        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        style="@style/CategoryTab"
         />
 
-    <TextView
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:text="Pubs"
-        android:textAllCaps="true"
-        android:id="@+id/pubs"
-        android:textSize="40sp"
-        android:background="@color/category_pubs"
-        android:textColor="@android:color/white"/>
-
-    <TextView
-        android:textColor="@android:color/white"
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:text="Shops"
-        android:textAllCaps="true"
-        android:id="@+id/shops"
-        android:textSize="40sp"
-        android:background="@color/category_shops"></TextView>
-
-    <TextView
-        android:textColor="@android:color/white"
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:text="Parks"
-        android:textAllCaps="true"
-        android:id="@+id/parks"
-        android:textSize="40sp"
-        android:background="@color/category_parks">
-
-    </TextView>
-
-
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
