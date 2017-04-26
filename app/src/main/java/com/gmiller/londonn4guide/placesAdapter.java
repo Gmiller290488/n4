@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -48,7 +49,7 @@ public class placesAdapter extends ArrayAdapter<place> {
         // Find the text with with ID distance
         TextView distance = (TextView) listView.findViewById(R.id.distance);
         String distanceFrom = String.valueOf(currentPlace.getDistance());
-        distance.setText(distanceFrom + "km");
+        distance.setText(distanceFrom + "k");
 
         View container = listView.findViewById(R.id.container);
         int color = ContextCompat.getColor(getContext(), mColorResourceID);
@@ -63,6 +64,20 @@ public class placesAdapter extends ArrayAdapter<place> {
 
         // Set the color on the magnitude circle
         distanceCircle.setColor(distanceColor);
+
+        // Find the ImageView in the list_item.xml layout with the ID image.
+        ImageView imageView = (ImageView) listView.findViewById(R.id.image);
+        // Check if an image is provided for this word or not
+        if (currentPlace.hasImage()) {
+            // If an image is available, display the provided image based on the resource ID
+            imageView.setImageResource(currentPlace.getmImageResourceId());
+            // Make sure the view is visible
+            imageView.setVisibility(View.VISIBLE);
+        } else {
+            // Otherwise hide the ImageView (set visibility to GONE)
+            imageView.setVisibility(View.GONE);
+        }
+
 
         return listView;
     }

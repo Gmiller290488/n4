@@ -29,14 +29,13 @@ public class RestaurantsFragment extends Fragment {
 
         // Create a fake list of earthquake locations.
         final ArrayList<place> places = new ArrayList<place>();
-        places.add(new place("Petek", "Amazing Turkish cuisine that won't break the bank", 0.5, "https://www.timeout.com/london/restaurants/petek"));
-        places.add(new place("WB Yeats", "Unless you have been to The Hand And Flowers, this will be the best pub food you've tried", 0.7, "https://www.facebook.com/wbyeatsn4/"));
-        places.add(new place("Pizza Pappagone", "Family friendly Italian with wood burning oven and great pizza", 0.7, "http://www.pizzeriapappagone.co.uk/"));
-        places.add(new place("Max's Sandwich Shop", "The most amazing sandwiches (in the world!)", 1.0, "http://www.maxssandwichshop.com/"));
-        places.add(new place("Xi'an Impression", "Forget your Chinese takeAway, this is THE real deal!", 1.5, "http://xianimpression.co.uk/"));
-        places.add(new place("Bird", "Organic Fried Chicken, wings, burgers, doughnuts", 2.2, "http://birdrestaurants.com/"));
-
-        places.add(new place("Che Cosa", "The best pizza in the area by FAR!", 2.5, "http://checosa.co.uk/"));
+        places.add(new place("Petek", "Amazing Turkish cuisine that won't break the bank", 0.5, "https://www.timeout.com/london/restaurants/petek", R.drawable.turkey4));
+        places.add(new place("WB Yeats", "Unless you have been to The Hand And Flowers, this will be the best pub food you've tried", 0.7, "https://www.facebook.com/wbyeatsn4/", R.drawable.ireland4));
+        places.add(new place("Pizza Pappagone", "Family friendly Italian with wood burning oven and great pizza", 0.7, "http://www.pizzeriapappagone.co.uk/", R.drawable.italy4));
+        places.add(new place("Max's Sandwich Shop", "The most amazing sandwiches (in the world!)", 1.0, "http://www.maxssandwichshop.com/", R.drawable.uk4));
+        places.add(new place("Xi'an Impression", "Forget your Chinese takeAway, this is THE real deal!", 1.5, "http://xianimpression.co.uk/", R.drawable.china4));
+        places.add(new place("Bird", "Organic Fried Chicken, wings, burgers, doughnuts", 2.2, "http://birdrestaurants.com/", R.drawable.usa4));
+        places.add(new place("Che Cosa", "The best pizza in the area by FAR!", 2.5, "http://checosa.co.uk/", R.drawable.italy4));
 
 
 

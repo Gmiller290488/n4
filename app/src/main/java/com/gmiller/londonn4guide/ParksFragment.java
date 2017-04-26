@@ -33,7 +33,6 @@ public class ParksFragment extends Fragment {
         places.add(new place("Finsbury Park", "Tennis Courts & Skate park", 0.0, "http://www.haringey.gov.uk/finsbury-park"));
         places.add(new place("Wray Crescent", "Cricket Pitch", 1.4, "http://www.better.org.uk/leisure-centre/london/islington/wray-crescent-cricket-pitch"));
         places.add(new place("Whittington Park", "Floral Cat", 2.1, "http://whittingtonpca.org.uk/"));
-
         places.add(new place("Dartmouth Park", "Great Views", 3.1, "http://www.dartmouthpark.org/"));
         places.add(new place("Waterlow Park", "Exhibitions & Tennis Courts", 3.4, "http://www.waterlowpark.org.uk/"));
 
