@@ -18,7 +18,6 @@ import java.util.ArrayList;
  */
 public class ShopsFragment extends Fragment {
 
-
     public ShopsFragment() {
         // Required empty public constructor
     }
@@ -32,7 +31,6 @@ public class ShopsFragment extends Fragment {
         places.add(new place("Shiny Pretty Shop", "Niche gifts", 0.6, "https://prettyshinyshop.com/"));
         places.add(new place("Stroud Green Fruit & Veg", "Organic food products", 0.6, "http://www.myorganichunter.com/destination_detail/organic-grocer/stroud_green_fruit_and_veg"));
 
-
         // Create a new {@link ArrayAdapter} of earthquakes
         final placesAdapter adapter = new placesAdapter(getActivity(), places, R.color.category_shops);
 
@@ -41,7 +39,6 @@ public class ShopsFragment extends Fragment {
         // Set the adapter on the {@link ListView}
         // so the list can be populated in the user interface
         placesListView.setAdapter(adapter);
-
         placesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
@@ -50,11 +47,8 @@ public class ShopsFragment extends Fragment {
                 Uri placeUri = Uri.parse(currentPlace.getUrl());
                 Intent websiteIntent = new Intent(Intent.ACTION_VIEW, placeUri);
                 startActivity(websiteIntent);
-
-
             }
         });
-
         return rootView;
     }
 }

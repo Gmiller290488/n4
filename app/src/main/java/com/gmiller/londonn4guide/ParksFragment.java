@@ -1,6 +1,5 @@
 package com.gmiller.londonn4guide;
 
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,7 +17,6 @@ import java.util.ArrayList;
  */
 public class ParksFragment extends Fragment {
 
-
     public ParksFragment() {
         // Required empty public constructor
     }
@@ -27,7 +25,6 @@ public class ParksFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.list, container, false);
 
-
         // Create a fake list of earthquake locations.
         final ArrayList<place> places = new ArrayList<place>();
         places.add(new place("Finsbury Park", "Tennis Courts & Skate park", 0.0, "http://www.haringey.gov.uk/finsbury-park"));
@@ -35,7 +32,6 @@ public class ParksFragment extends Fragment {
         places.add(new place("Whittington Park", "Floral Cat", 2.1, "http://whittingtonpca.org.uk/"));
         places.add(new place("Dartmouth Park", "Great Views", 3.1, "http://www.dartmouthpark.org/"));
         places.add(new place("Waterlow Park", "Exhibitions & Tennis Courts", 3.4, "http://www.waterlowpark.org.uk/"));
-
 
         // Create a new {@link ArrayAdapter} of earthquakes
         final placesAdapter adapter = new placesAdapter(getActivity(), places, R.color.category_parks);
@@ -54,11 +50,8 @@ public class ParksFragment extends Fragment {
                 Uri placeUri = Uri.parse(currentPlace.getUrl());
                 Intent websiteIntent = new Intent(Intent.ACTION_VIEW, placeUri);
                 startActivity(websiteIntent);
-
-
             }
         });
-
         return rootView;
     }
 }

@@ -28,13 +28,12 @@ public class placesAdapter extends ArrayAdapter<place> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-
         View listView = convertView;
         if (listView == null) {
             listView = LayoutInflater.from(getContext()).inflate(
                     R.layout.display_activity, parent, false);
-
         }
+
         // Find the earthquake at the given position in the list of earthquakes
         place currentPlace = getItem(position);
 
@@ -77,19 +76,16 @@ public class placesAdapter extends ArrayAdapter<place> {
             // Otherwise hide the ImageView (set visibility to GONE)
             imageView.setVisibility(View.GONE);
         }
-
-
         return listView;
     }
 
     private double getDistColor(double dist) {
         int distanceColorResourceId;
-        int floordist = (int) (dist)*10;
+        int floordist = (int) (dist) * 10;
         switch (floordist) {
             case 0:
                 distanceColorResourceId = R.color.distance0_5;
                 break;
-
             case 5:
                 distanceColorResourceId = R.color.distance0_5;
                 break;

@@ -26,4 +26,27 @@
     <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textColor">#ffffff</item>
     </style>
+
+    <style name="TitleTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DescriptionTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="DistanceTextView" parent="TextAppearance.AppCompat">
+        <item name="android:paddingLeft">@dimen/standard_plus_horizontal_padding</item>
+        <item name="android:paddingTop">@dimen/standard_plus_vertical_padding</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/distance_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/standard_horizontal_padding</item>
+        <item name="android:layout_marginRight">@dimen/standard_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/half_vertical_margin</item>
+    </style>
 </resources>

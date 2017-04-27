@@ -23,7 +23,7 @@ import android.support.v4.app.FragmentPagerAdapter;
  * Provides the appropriate {@link Fragment} for a view pager.
  */
 public class CategoryAdapter extends FragmentPagerAdapter {
-    private String tabTitles[] = new String[] { "Parks", "Food", "Pubs", "Shops" };
+    private String tabTitles[] = new String[]{"Parks", "Food", "Pubs", "Shops"};
 
     public CategoryAdapter(FragmentManager fm) {
         super(fm);
@@ -33,7 +33,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         if (position == 0) {
             return new ParksFragment();
-        } else if (position == 1){
+        } else if (position == 1) {
             return new RestaurantsFragment();
         } else if (position == 2) {
             return new PubsFragment();
@@ -47,10 +47,9 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         return 4;
     }
 
-
     @Override
     public CharSequence getPageTitle(int position) {
         // Generate title based on item position
         return tabTitles[position];
-}
+    }
 }
